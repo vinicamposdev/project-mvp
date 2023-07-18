@@ -2,15 +2,11 @@
 Just hit:
 ```sh
 make
-make debug='-O3' build SOURCE=examples/min_cost_flow/min_cost_flow.cc && ./examples/min_cost_flow/build/bin/min_cost_flow 10 < examples/min_cost_flow/test_case/3.in
+make debug='-O3' build SOURCE=examples/min_cost_flow/min_cost_flow.cc && ./examples/min_cost_flow/build/bin/min_cost_flow 10 < examples/min_cost_flow/test_case/1.in
 ```
 Where 1 could be 1-8, is the test cases
 
-To verify if is the correct solution:
-
-```sh
-ARGV=1 && diff <(./program < casos_de_teste_02-2/$ARGV.in) casos_de_teste_02-2/($ARGV).out
-```
+To verify if is the correct solution you must compare the run with the input on the /test_case/{test case number}.out file
 
 ## Problem Description
 
