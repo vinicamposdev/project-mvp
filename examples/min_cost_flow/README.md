@@ -2,16 +2,9 @@
 Just hit:
 ```sh
 make
-make run ARGS=1
+make debug='-O3' build SOURCE=examples/min_cost_flow/min_cost_flow.cc && ./examples/min_cost_flow/build/bin/min_cost_flow 10 < examples/min_cost_flow/test_case/3.in
 ```
 Where 1 could be 1-8, is the test cases
-
-You could also:
-
-```sh
-gcc *.c -Wall -pedantic-errors -o program -lm
-./program < test_case/$(ARGS).in
-```
 
 To verify if is the correct solution:
 
@@ -66,6 +59,9 @@ Path must have this values:
  - 'E' - East
  - 'W' - West
 
+## Acceptance Criteria
+
+In /test_case directory there is the input files `<Numbere>.in` is the input, and  `<Numbere>.out ` is the output expected with the value of the minimum cost for that path.
 
 ## Atemptives
 

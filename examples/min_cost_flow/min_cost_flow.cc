@@ -1,16 +1,12 @@
-//  Voce pode submetera esse codigo 
-//entao alteracoes aqui nao terao efeitos
-//nao adianta modificar ela.
-
+// Try DON'T CHANGE THIS FILE
+// JUST THE FUNCTION ON LINE 218 (operations_research::Solve)
 #include<stdlib.h>
 #include<stdio.h>
 #include <iostream>
 #include <fstream>
-// #include"solver.hpp"
-// #include"tabuleiro.hpp"
 #include"limits.h"
 
-// Importar ortools
+// Import ortools
 #include "ortools/base/init_google.h"
 #include "ortools/base/logging.h"
 #define INF 1e9
@@ -126,7 +122,7 @@ int verify_aux_path(char ** T, int n, char * path, int path_length, char ** visi
       return 0;
     }
     if(visited[x][y] == '1'){
-      printf("Your path is repeating steps!\n");
+      printf("Your path is repeating nodes!\n");
       return 0;
     }
     visited[x][y] = '1';
@@ -186,8 +182,6 @@ void draw_path(char ** T, int n, char * path, int path_length){
   }
 }
 
-
-
 void print_matrix(char** T, int n) {
   printf("Calculate damage:\n");
 
@@ -221,6 +215,7 @@ void print_matrix(char** T, int n) {
 }
 
 namespace operations_research {
+  // MUST IMPLEMENT THIS FUNCTION
   int Solve(char ** T, int n, char * path) {
     return 0;
   }
